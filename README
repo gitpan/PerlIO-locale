@@ -1,4 +1,4 @@
-PerlIO::locale v0.01
+PerlIO::locale v0.02
 ====================
 
 PerlIO layer to use the encoding of the current locale.
