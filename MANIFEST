@@ -1,0 +1,8 @@
+MANIFEST
+MANIFEST.SKIP
+Makefile.PL
+README
+locale.pm
+locale.xs
+t/01compile.t
+META.yml                                 Module meta-data (added by MakeMaker)
