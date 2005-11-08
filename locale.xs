@@ -33,6 +33,8 @@ PerlIOLocale_pushed(pTHX_ PerlIO *f, const char *mode, SV *arg, PerlIO_funcs *ta
 {
     /* It would be better to use the code from open::import() here
      * instead of relying on the availability of nl_langinfo. */
+    /* Also, on some platforms CODESET might not be #defined, although it
+     * should be in langinfo.h. */
     SV *locale_encoding = sv_2mortal(newSVpv(nl_langinfo(CODESET), 0));
     return PerlIOEncode_pushed(aTHX_ f, mode, locale_encoding, tab);
 }

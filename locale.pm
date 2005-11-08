@@ -5,7 +5,7 @@ use strict;
 use DynaLoader;
 use PerlIO::encoding;
 our @ISA = qw(DynaLoader);
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 bootstrap PerlIO::locale;
 
@@ -34,7 +34,9 @@ to the locale currently in effect, if perl can guess it.
 
 =head1 AUTHOR
 
-Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com>
+Copyright (c) 2004, 2005 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com>.
+This program is free software; you may redistribute it and/or modify it
+under the same terms as Perl itself.
 
 =head1 SEE ALSO
 
