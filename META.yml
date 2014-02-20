@@ -18,5 +18,7 @@ no_index:
     - t
     - inc
 requires:
+  I18N::Langinfo: 0
   PerlIO::encoding: 0
-version: 0.09
+  Test::More: 0
+version: 0.10
